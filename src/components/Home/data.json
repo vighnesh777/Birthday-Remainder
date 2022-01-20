@@ -1,0 +1,26 @@
+[
+    {
+        "name": "K.Vighnesh",
+        "dob":{"day":"08","month":"02","year":"2012"},
+        "ImgURL":" https://pe-images.s3.amazonaws.com/basics/cc/image-size-resolution/resize-images-for-print/image-cropped-8x10.jpg",
+        "Age": 21
+    },
+    {
+        "name": "K.Myself Mowa",
+        "dob":{"day":"11","month":"01","year":"1998"},
+        "ImgURL":" https://pe-images.s3.amazonaws.com/basics/cc/image-size-resolution/resize-images-for-print/image-cropped-8x10.jpg",
+        "Age": 22
+    },
+    {
+        "name": "P.HarshaVardhan",
+        "dob":{"day":"11","month":"01","year":"2000"},
+        "ImgURL":" https://pe-images.s3.amazonaws.com/basics/cc/image-size-resolution/resize-images-for-print/image-cropped-8x10.jpg",
+        "Age": 31
+    },
+    {
+        "name": "G.N.V.SwamyNaidu",
+        "dob":{"day":"21","month":"12","year":"2002"},
+        "ImgURL":" https://pe-images.s3.amazonaws.com/basics/cc/image-size-resolution/resize-images-for-print/image-cropped-8x10.jpg",
+        "Age": 11
+    }
+]

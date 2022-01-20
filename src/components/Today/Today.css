@@ -1,0 +1,138 @@
+.body-container{
+    margin: 0;
+    text-align: center;
+    background-color: #a3e4db;
+    height: 100vh;
+    
+}
+.container{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    align-content: center;
+    max-width: 600px;
+    position: relative;
+    background-color: white;
+	margin: auto;
+    padding: 20px;
+	font: italic 1.2rem ;
+	background:  no-repeat left;
+	text-indent: 1.6em;
+}
+.Heading{
+    height: 15%;
+    width: 100%;
+    background-color: white;
+    border-bottom: 2px solid rgba(129, 129, 129, 0.842);
+}
+h1{
+    color: rgb(53, 53, 53);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: wavy;
+    margin-bottom: 0px;
+}
+.main-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    width:100%
+}
+.banner{
+
+    width: 100%;
+    
+    position: relative;
+	margin: 2px;
+    padding: 5px;
+height: 110px;
+display: flex;
+flex-direction: row;
+border-bottom: 1px solid rgb(197, 159, 159);
+}
+.imagePart{
+    width: 16%;
+    height: 100%;
+    text-align: center;
+}
+.text-content{
+    width: 84%;
+    float: right;
+    height: 100%;
+
+}
+
+img{
+    height: 80%;
+    border-radius: 50%;
+    object-fit: contain;
+}
+.container:before{
+    pointer-events: none;
+	position: absolute;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+}
+.container:after
+{
+    position: absolute;
+	z-index: 1;
+	left: 50%;
+	top: -2px;
+	transform: translate(-50%, -50%);
+	width: 1.3em;
+	height: 1.3em;
+
+	display: grid;
+	place-content: center;
+	padding-top: .5em;
+	
+	font-style: normal;
+	text-indent: 0;
+}
+.main-body:before{
+    pointer-events: none;
+	position: absolute;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+}
+.main-body:after
+{
+    position: absolute;
+	z-index: 1;
+	left: 50%;
+	top: -2px;
+	transform: translate(-50%, -50%);
+	width: 1.3em;
+	height: 1.3em;
+
+	display: grid;
+	place-content: center;
+	padding-top: .5em;
+	
+	font-style: normal;
+	text-indent: 0;
+}
+.text-content{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+p{
+    font-size: 23px;
+    font-weight: 600;
+}
+.name,.age{
+    height: 50%;
+}
+h2{
+    color: black;
+}

@@ -1,0 +1,129 @@
+import React, { useEffect, useState } from 'react';
+import './Add.css';
+import axios from 'axios';
+import NavBar from '../NavBar/NavBar';
+const Add = () => {
+    var [name, setName] = useState("");
+    var [gender, setGender] = useState("");
+    var [relation, setRelation] = useState("");
+    var [dob, setDob] = useState("");
+    var [saved, setSaved] = useState(false);
+
+    function handleClick(e) {
+        e.preventDefault();
+        var fm2 = document.getElementById("forms");
+        const b = {};
+        var message = document.getElementById("message");
+        new FormData(fm2).forEach((value, key) => b[key] = value);
+        axios.defaults.headers.post['Content-Type'] = 'application/json;charset=utf-8';
+        axios.defaults.headers.post['Access-Control-Allow-Origin'] = 'http://localhost:3001/add';
+
+        axios.post('http://localhost:3001/add', b)
+            .then(response => {
+                if (response.status === 200) { setSaved(true); }
+            }).catch(error => {
+                message.innerHTML = `Error: ${error.message}`;
+                console.error('There was an error!', error);
+            });
+    }
+    if (saved) {
+        return (
+
+
+            
+             <div>
+             <NavBar />
+ 
+ 
+             <div className='holders'>
+             <div>
+                <h1>Submitted Successfully</h1>
+            </div>
+                 <div className="container-holder">
+                     <div className="login-container">
+ 
+                         <div className="form-container">
+ 
+ 
+                             <form id="forms" >
+                                 <div className="signup-container ">
+ 
+                                     <input type="text" name="Name" id="name" value={name}
+                                         onChange={e => setName(e.target.value)} placeholder=" " autoComplete="off" />
+                                     <label htmlFor="name">Name</label>
+ 
+                                     <select name="Relation" id="relation" value={relation}
+                                         onChange={e => setRelation(e.target.value)}>
+                                         <option value="Friend" className="option">Friend</option>
+                                         <option value="Bestie" className="option">Bestie</option>
+                                         <option value="Buddy" className="option">Buddy</option>
+                                         <option value="Relative" className="option">Relative</option>
+                                     </select>
+                                     <select name="Gender" id="gender" value={gender}
+                                         onChange={e => setGender(e.target.value)}>
+                                         <option value="Male" className="option">Male</option>
+                                         <option value="Female" className="option">Female</option>
+                                     </select>
+                                     <input type="date" name="Dob" id="dob" placeholder=" " autoComplete="off" value={dob}
+                                         onChange={e => setDob(e.target.value)} />
+                                     <label htmlFor="dob" className='label'>Date Of Birth</label>
+                                     <button className="signup-button" onClick={handleClick} type="submit" >Post</button>
+                                 </div>
+                             </form>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+        )
+ 
+ 
+    }
+    return (
+        <div>
+            <NavBar />
+
+
+            <div className='holders'>
+                <div className="container-holder">
+                    <div className="login-container">
+
+                        <div className="form-container">
+
+
+                            <form id="forms" >
+                                <div className="signup-container ">
+
+                                    <input type="text" name="Name" id="name" value={name}
+                                        onChange={e => setName(e.target.value)} placeholder=" " autoComplete="off" />
+                                    <label htmlFor="name">Name</label>
+
+                                    <select name="Relation" id="relation" value={relation}
+                                        onChange={e => setRelation(e.target.value)}>
+                                        <option value="Friend" className="option">Friend</option>
+                                        <option value="Bestie" className="option">Bestie</option>
+                                        <option value="Buddy" className="option">Buddy</option>
+                                        <option value="Relative" className="option">Relative</option>
+                                    </select>
+                                    <select name="Gender" id="gender" value={gender}
+                                        onChange={e => setGender(e.target.value)}>
+                                        <option value="Male" className="option">Male</option>
+                                        <option value="Female" className="option">Female</option>
+                                    </select>
+                                    <input type="date" name="Dob" id="dob" placeholder=" " autoComplete="off" value={dob}
+                                        onChange={e => setDob(e.target.value)} />
+                                    <label htmlFor="dob" className='label'>Date Of Birth</label>
+                                    <button className="signup-button" onClick={handleClick} type="submit" >Post</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    );
+}
+
+export default Add;
