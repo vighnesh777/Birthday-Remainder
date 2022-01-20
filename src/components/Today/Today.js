@@ -18,7 +18,7 @@ const Today = () => {
 
     }, [])
     async function getsData() {
-        await fetch("http://localhost:3001/getData").then(res =>
+        await fetch("https://diaryservers.herokuapp.com/getData").then(res =>
 
             res.json()
         )

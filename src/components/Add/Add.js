@@ -16,9 +16,9 @@ const Add = () => {
         var message = document.getElementById("message");
         new FormData(fm2).forEach((value, key) => b[key] = value);
         axios.defaults.headers.post['Content-Type'] = 'application/json;charset=utf-8';
-        axios.defaults.headers.post['Access-Control-Allow-Origin'] = 'http://localhost:3001/add';
+        axios.defaults.headers.post['Access-Control-Allow-Origin'] = 'https://diaryservers.herokuapp.com/add';
 
-        axios.post('http://localhost:3001/add', b)
+        axios.post('https://diaryservers.herokuapp.com/add', b)
             .then(response => {
                 if (response.status === 200) { setSaved(true); }
             }).catch(error => {

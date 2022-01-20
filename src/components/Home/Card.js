@@ -9,7 +9,7 @@ class Card extends React.Component{
         // setTimeout(() => {
         //     this.setState({ showModal: true });
         // }, 1400);
-        fetch("http://localhost:3001/getData").then((res) =>
+        fetch("https://diaryservers.herokuapp.com/getData").then((res) =>
         {if(!res.ok){
             this.setState({
                 data:[],
