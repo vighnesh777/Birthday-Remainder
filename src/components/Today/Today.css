@@ -25,10 +25,13 @@
     height: 15%;
     width: 100%;
     background-color: white;
-    border-bottom: 2px solid rgba(129, 129, 129, 0.842);
+    padding:3px;
+    border-radius: 20px;
+    margin-bottom: 8px;
+    border: 2px solid rgba(37, 37, 37, 0.842);
 }
 h1{
-    color: rgb(53, 53, 53);
+    color: rgba(204, 42, 42, 0.884);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-decoration: wavy;
     margin-bottom: 0px;
@@ -38,14 +41,16 @@ h1{
     flex-direction: column;
     justify-content: center;
     background-color: white;
-    width:100%
+    width:100%;
+    padding:2px;
+    border-radius: 12px;
 }
 .banner{
 
     width: 100%;
     
     position: relative;
-	margin: 2px;
+	margin: 4px;
     padding: 5px;
 height: 110px;
 display: flex;

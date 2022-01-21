@@ -144,7 +144,7 @@ body{
   select{
     margin-bottom: 40px;
   }
-  button {
+  .signup-button {
     height: 100%;
     width: 50%;
     padding: 10px;
