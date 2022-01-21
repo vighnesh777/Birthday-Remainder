@@ -1,8 +1,11 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
+  "engines": {
+    "node": "12.21.0",
+    "npm": "7.5.2"
+  },
   "private": true,
-  "homepage": "https://vighnesh777.github.io/Birthday-Remainder",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
