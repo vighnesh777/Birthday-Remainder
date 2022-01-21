@@ -3,6 +3,7 @@
     text-align: center;
     background-color: #a3e4db;
     height: auto;
+    overflow-y: auto;
     
 }
 .container{

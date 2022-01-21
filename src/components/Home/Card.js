@@ -2,9 +2,10 @@ import "./Home.css";
 import React, { useEffect, useState } from "react";
 import Loading from "../Loading/Loading";
 import Profile from './Profile';
+import NoBirthday from '../NoBirthday/NoBirthday';
 import NavBar from "../NavBar/NavBar";
 class Card extends React.Component{
-    state = {data:[]};
+    state = {data:[],isLoaded:false};
     
     componentDidMount() {
         let options={
@@ -31,6 +32,7 @@ class Card extends React.Component{
         .then((json) => {
             this.setState({
                 data: json,
+                isLoaded:true,
             });
             console.log(this.state.data);
         }).catch(e => {
@@ -40,9 +42,13 @@ class Card extends React.Component{
           
     }
     render(){
-        if(!this.state.data || this.state.data.length===0)
+        if(!this.state.isLoaded)
         {
             return(<Loading/>)
+        }
+        else if(this.state.data.length===0 && this.state.isLoaded)
+        {
+            return(<NoBirthday heading={"this Year yet"}/>)
         }
         return(
 

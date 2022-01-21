@@ -46,7 +46,7 @@ const Today = () => {
         return(<Loading/>)
     }
     else if (data.length===0 ) {
-        return (<NoBirthday />)
+        return (<NoBirthday heading={"Today"}/>)
     }
     
     return (

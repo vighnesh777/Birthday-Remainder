@@ -66,7 +66,7 @@ const Add = () => {
                                          <option value="Male" className="option">Male</option>
                                          <option value="Female" className="option">Female</option>
                                      </select>
-                                     <input type="date" name="Dob" id="dob" placeholder=" " autoComplete="off" value={dob}
+                                     <input type="date" name="Dob" max="2004-12-31" id="dob" placeholder=" " autoComplete="off" value={dob}
                                          onChange={e => setDob(e.target.value)} />
                                      <label htmlFor="dob" className='label'>Date Of Birth</label>
                                      <button className="signup-button" onClick={handleClick} type="submit" >Post</button>
@@ -119,7 +119,7 @@ const Add = () => {
                                         <option value="Male" className="option">Male</option>
                                         <option value="Female" className="option">Female</option>
                                     </select>
-                                    <input type="date" name="Dob" id="dob" placeholder=" " autoComplete="off" value={dob}
+                                    <input type="date" name="Dob" max="2004-12-31" id="dob" placeholder=" " autoComplete="off" value={dob}
                                         onChange={e => setDob(e.target.value)} />
                                     <label htmlFor="dob" className='label'>Date Of Birth</label>
                                     <button className="signup-button" onClick={handleClick} type="submit" >Post</button>
@@ -163,7 +163,7 @@ const Add = () => {
                                         <option value="Male" className="option">Male</option>
                                         <option value="Female" className="option">Female</option>
                                     </select>
-                                    <input type="date" name="Dob" id="dob" placeholder=" " autoComplete="off" value={dob}
+                                    <input type="date" name="Dob" max="2004-12-31" id="dob" placeholder=" " autoComplete="off" value={dob}
                                         onChange={e => setDob(e.target.value)} />
                                     <label htmlFor="dob" className='label'>Date Of Birth</label>
                                     <button className="signup-button" onClick={handleClick} type="submit" >Post</button>
