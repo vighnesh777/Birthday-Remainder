@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/birthday/static/css/main.ed24833e.css",
-    "main.js": "/birthday/static/js/main.353e5395.js",
-    "static/media/female-avatar.gif": "/birthday/static/media/female-avatar.3ee3e0f6e673351bc682.gif",
-    "static/media/male-avatar.gif": "/birthday/static/media/male-avatar.57424f97ae25fb7ccd5b.gif",
-    "index.html": "/birthday/index.html",
-    "main.ed24833e.css.map": "/birthday/static/css/main.ed24833e.css.map",
-    "main.353e5395.js.map": "/birthday/static/js/main.353e5395.js.map"
+    "main.css": "/Birthday-Remainder/static/css/main.dc8ff15a.css",
+    "main.js": "/Birthday-Remainder/static/js/main.3d837954.js",
+    "static/media/female-avatar.gif": "/Birthday-Remainder/static/media/female-avatar.3ee3e0f6e673351bc682.gif",
+    "static/media/male-avatar.gif": "/Birthday-Remainder/static/media/male-avatar.57424f97ae25fb7ccd5b.gif",
+    "index.html": "/Birthday-Remainder/index.html",
+    "main.dc8ff15a.css.map": "/Birthday-Remainder/static/css/main.dc8ff15a.css.map",
+    "main.3d837954.js.map": "/Birthday-Remainder/static/js/main.3d837954.js.map"
   },
   "entrypoints": [
-    "static/css/main.ed24833e.css",
-    "static/js/main.353e5395.js"
+    "static/css/main.dc8ff15a.css",
+    "static/js/main.3d837954.js"
   ]
 }
