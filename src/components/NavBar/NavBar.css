@@ -1,12 +1,18 @@
 .navbar-collapse{
     justify-content: flex-end;
 }
-
+nav{
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
 .navbar-brand
 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 34px;
     font-weight: 900;
+    margin: auto;
     color: rgba(204, 42, 42, 0.884);
 }
 .navbar-toggler{

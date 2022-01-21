@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import './Add.css';
 import axios from 'axios';
 import NavBar from '../NavBar/NavBar';
@@ -15,7 +15,7 @@ const Add = () => {
         const b = {
             header:{'Access-Control-Allow-Origin':"*"}
         };
-        var message = document.getElementById("message");
+        
         new FormData(fm2).forEach((value, key) => b[key] = value);
         axios.defaults.headers.post['Content-Type'] = 'application/json;charset=utf-8';
         axios.defaults.headers.post['Access-Control-Allow-Origin'] = '*';

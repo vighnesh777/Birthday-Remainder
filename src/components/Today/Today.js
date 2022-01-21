@@ -51,7 +51,7 @@ const Today = () => {
     
     return (
         <div className="body-container">
-            <NavBar />
+           
             <div className="container">
                 <div className="Heading">
                     <h1>Birthdays Today</h1>

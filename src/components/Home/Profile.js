@@ -1,5 +1,5 @@
 import "./Home.css";
-import React, { useEffect } from "react";
+import React from "react";
 import maleAvatar from '../../assets/male-avatar.gif';
 import femaleAvatar from '../../assets/female-avatar.gif';
 const Profile=({name,gender,dob,relation})=>

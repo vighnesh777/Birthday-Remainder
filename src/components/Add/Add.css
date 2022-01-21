@@ -18,6 +18,7 @@ body{
     display: flex;
     justify-content: center;
     justify-self: center;
+    border:3px solid rgb(224, 29, 62);
     align-items: center;
     font-family: verdana;
     background-color: #FFCBCB;

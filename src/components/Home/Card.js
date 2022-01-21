@@ -1,9 +1,9 @@
 import "./Home.css";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Loading from "../Loading/Loading";
 import Profile from './Profile';
 import NoBirthday from '../NoBirthday/NoBirthday';
-import NavBar from "../NavBar/NavBar";
+
 class Card extends React.Component{
     state = {data:[],isLoaded:false};
     
@@ -53,7 +53,7 @@ class Card extends React.Component{
         return(
 
             <div className="body-container">
-                <NavBar/>
+                
         <div className="container">
                 <div className="Heading">
                     <h1>Birthdays This Year</h1>
