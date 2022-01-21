@@ -5,11 +5,17 @@ import Profile from './Profile';
 import NavBar from "../NavBar/NavBar";
 class Card extends React.Component{
     state = {data:[]};
+    
     componentDidMount() {
+        let options={
+
+            headers: { 'Content-Type': 'application/json',
+        "Access-Control-Allow-Origin":"*"},
+        }
         // setTimeout(() => {
         //     this.setState({ showModal: true });
         // }, 1400);
-        fetch("https://diaryservers.herokuapp.com/getData").then((res) =>
+        fetch("https://diaryservers.herokuapp.com/getData",options).then((res) =>
         {if(!res.ok){
             this.setState({
                 data:[],
