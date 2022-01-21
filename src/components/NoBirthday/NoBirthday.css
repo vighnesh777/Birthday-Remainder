@@ -59,6 +59,7 @@ border-bottom: 1px solid rgb(197, 159, 159);
     align-items: center;
     display: flex;
     border-radius: 50%;
+    padding:0 6px;
     justify-content: center;
     text-align: center;
 }
@@ -70,7 +71,10 @@ border-bottom: 1px solid rgb(197, 159, 159);
 }
 
 img{
-    height: 80%;
+    height:100%;
+    width:100%;
+    border-radius: 48%;
+    border: 5px solid rgb(88, 64, 68);
     object-fit: contain;
 }
 .container:before{
